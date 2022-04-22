@@ -28,6 +28,7 @@ author:
 # URL settings
 url: "https://github.com/craig-shenton/nhs-data-engineer" # Domain Name of host. [username].github.io for github pages
 permalink: pretty
+baseurl: "https://github.com/craig-shenton/nhs-data-engineer"
 
 markdown: kramdown
 kramdown:
