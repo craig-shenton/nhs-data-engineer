@@ -7,7 +7,7 @@ permalink: /binary-search-algorithm-c-programming-example/
 categories: General
 tags: [test]
 ---
-Test Post
+Test Post.
 
 {% highlight c %}
 #include <stdio.h>
