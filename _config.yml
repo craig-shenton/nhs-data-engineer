@@ -15,7 +15,7 @@ discus-identifier:  XXX
 author:
   name: Craig Robert Shenton, PhD
   bio: Senior Data Engineer @NHS England <br> Founder @NHS.Pycom <br> Open Source /#python
-  picture: {{ site.url }}/assets/images/profile.jpg 
+  picture: https://craig-shenton.github.io/assets/images/profile.jpg
   github: craig-shenton # github username
   youtube: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/featured # youtube username
   linkedin: craigrshenton # linkedin username
