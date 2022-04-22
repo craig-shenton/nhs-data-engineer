@@ -13,8 +13,8 @@ discus-identifier:  XXX
 
 # Author settings
 author:
-  name: Dr Craig Robert Shenton
-  bio: Senior Data Engineer @NHS England <br> Founder @NHS Pycom <br> Open Source /#python
+  name: Craig Robert Shenton, PhD
+  bio: Senior Data Engineer @NHS England <br> Founder @NHS.Pycom <br> Open Source /#python
   picture: {{ site.url }}/assets/images/profile.jpg 
   github: craig-shenton # github username
   youtube: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/featured # youtube username
