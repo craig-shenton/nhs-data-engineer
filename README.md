@@ -11,7 +11,7 @@ Run local server:
 
 ```bash
 $ git clone https://github.com/craig-shenton/nhs-data-engineer.git
-$ cd Ephesus
+$ cd nhs-data-engineer
 $ bundle install
 $ bundle exec jekyll build
 $ bundle exec jekyll serve
