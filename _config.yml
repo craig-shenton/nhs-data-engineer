@@ -1,11 +1,11 @@
 # Site settings
-site: Ephesus
-title: Ephesus - Minimalist Jekyll Theme
-keywords: ephesus, blog
+site: NHS Data Engineering
+title: NHS Data Engineering
+keywords: NHS, Data Engineering, Python, Blog
 description: >-
-  Ephesus - Minimalist Jekyll Theme
+  NHS Data Engineering Links
 lang: en-US
-timezone:  Europe/Istanbul
+timezone:  UK
 repo: https://github.com/craig-shenton/nhs-data-engineer # site repo [optional]
 google_verify:      XXX # Put your Google Verification here
 google_analytics:   UA-XXXXXXXX-00 # Put your Google Analytics code
@@ -13,16 +13,13 @@ discus-identifier:  XXX
 
 # Author settings
 author:
-  name: Hakan Torun
-  bio: Computer Engineer @pardinus <br> Founder @zaqa <br> Open Source /#linux
-  picture: assets/images/profile.jpg 
-  github: onepase # github username
-  twitter: onepase # twitter username
-  facebook: onepase # facebook username
-  instagram: onepase # instagram username
-  youtube: https://www.youtube.com/channel/UCMmAto-wxBootXN91AzBiDg # youtube username
-  linkedin: hakantorun # linkedin username
-  email: your-email@email.com # email adress
+  name: Dr Craig Robert Shenton
+  bio: Senior Data Engineer @NHS England <br> Founder @NHS Pycom <br> Open Source /#python
+  picture: {{ site.url }}/assets/images/profile.jpg 
+  github: craig-shenton # github username
+  youtube: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/featured # youtube username
+  linkedin: craigrshenton # linkedin username
+  email: craig.shenton@nhs.net # email adress
 
 
 # URL settings
