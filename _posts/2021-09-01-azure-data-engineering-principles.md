@@ -8,7 +8,9 @@ categories: Data Engineering
 tags: [Azure, Data Engineering]
 ---
 
-**Authors:** Craig Robert Shenton, PhD - Senior Data Engineer & Mattia Ficarelli, PhD - Data Engineer
+### Authors
+- Craig Robert Shenton, PhD - Senior Data Engineer
+- Mattia Ficarelli, PhD - Data Engineer
 
 [Originally posted on the NHSX technical gateway site](https://nhsx.github.io/AnalyticsUnit/azure-de-principles.html)
 

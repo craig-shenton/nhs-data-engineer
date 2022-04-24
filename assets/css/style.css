@@ -171,8 +171,10 @@ body{
 .text-right{text-align: right;}
 .w-100{width: 100%!important;}
 
+/*
 a:hover{text-decoration: none;}
 a{color: var(--primary-font-color); text-decoration: none;}
+*/ 
 img{max-width: 100%;}
 figure{margin:0; padding: 15px;}
 pre{font-size: 14px; max-width: 90vw; overflow: auto;}
