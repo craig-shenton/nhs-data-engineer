@@ -12,20 +12,21 @@ tags: [Azure, Data Engineering]
 - Craig Robert Shenton, PhD - Senior Data Engineer
 - Mattia Ficarelli, PhD - Data Engineer
 
-[Originally posted on the NHSX technical gateway site](https://nhsx.github.io/AnalyticsUnit/azure-de-principles.html)
+Originally posted on the [NHSX technical gateway](https://nhsx.github.io/AnalyticsUnit/azure-de-principles.html) website.
 
+## Content
 In this post, we aim to set out the data engineering principles we have developed over the last year, in designing and building our Azure cloud-analytics infrastructure. These principles are broken down into the following sections:
 
-- [Azure Data Engineering Principles]({{ site.url }}{{ post.url }}#azure-data-engineering-principles)
-	- [Parameterisation]({{ site.url }}{{ post.url }}#parameterisation)
-		- [Example: latestFolder]({{ site.url }}{{ post.url }}#example-latestfolder)
-	- [Configuration-as-code]({{ site.url }}{{ post.url }}#configuration-as-code)
-	- [Standardised ETL Design Patterns]({{ site.url }}{{ post.url }}#standardised-etl-design-patterns)
-		- [**Example 1**: SQL Database Ingestion Pipeline]({{ site.url }}{{ post.url }}#example-1-sql-database-ingestion-pipeline)
-		- [**Example 2**: Databricks Processing Pipeline]({{ site.url }}{{ post.url }}#example-2-databricks-processing-pipeline)
-	- [Hierarchical Pipeline Orchestration]({{ site.url }}{{ post.url }}#hierarchical-pipeline-orchestration)
-	- [Documentation-as-code]({{ site.url }}{{ post.url }}#documentation-as-code)
-	- [References]({{ site.url }}{{ post.url }}#references)
+- [Azure Data Engineering Principles]({{ post.url }}#azure-data-engineering-principles)
+	- [Parameterisation]({{ post.url }}#parameterisation)
+		- [Example: latestFolder]({{ post.url }}#example-latestfolder)
+	- [Configuration-as-code]({{ post.url }}#configuration-as-code)
+	- [Standardised ETL Design Patterns]({{ post.url }}#standardised-etl-design-patterns)
+		- [**Example 1**: SQL Database Ingestion Pipeline]({{ post.url }}#example-1-sql-database-ingestion-pipeline)
+		- [**Example 2**: Databricks Processing Pipeline]({{ post.url }}#example-2-databricks-processing-pipeline)
+	- [Hierarchical Pipeline Orchestration]({{ post.url }}#hierarchical-pipeline-orchestration)
+	- [Documentation-as-code]({{ post.url }}#documentation-as-code)
+	- [References]({{ post.url }}#references)
 
 ## Parameterisation
 
@@ -36,7 +37,7 @@ The first step in untangling this web of configurations is applying parameterisa
 For example, we created a generic dataset for handling `.csv` files on our Azure Datalake that passes the following parameters at runtime:
 
 <p align="center">
-  <img height="110px" src="{{ site.url }}/assets/images/azure-data-engineering-principles/fig1.png">
+  <img height="110px" src="https://github.com/craig-shenton/nhs-data-engineer/assets/images/azure-data-engineering-principles/fig1.png">
 </p>
 
 <center><b>Figure 1.</b> An Azure Data Factory dataset file path configuration using the parameters; <code>@dataset().fileSystem</code>, <code>@dataset().filePath</code>, <code>@dataset().fileName</code> to denote the datalake file system name, the file path and and the file name.</center>
@@ -49,7 +50,7 @@ A downside of highly parameterised pipelines is that they can become harder to d
 ### Example: latestFolder
 
 <p align="center">
-  <img height="200" src="{{ site.url }}/assets/images/azure-data-engineering-principles/fig2.png">
+  <img height="200" src="https://github.com/craig-shenton/nhs-data-engineer/assets/images/azure-data-engineering-principles/fig2.png">
 </p>
 
 <center><b>Figure 2.</b> An example Azure Data Factory pipeline utility that can append the source path of any file with the latest time-stamped folder path.</center>
@@ -83,7 +84,7 @@ For our internal analytics data engineering work, we have found it useful to bre
 ### **Example 1**: SQL Database Ingestion Pipeline
 
 <p align="center">
-  <img height="360" src="{{ site.url }}/assets/images/azure-data-engineering-principles/fig3.png">
+  <img height="360" src="https://github.com/craig-shenton/nhs-data-engineer/assets/images/azure-data-engineering-principles/fig3.png">
 </p>
 
 <center><b>Figure 3.</b> An example Azure Data Factory ingestion pipeline template that can be configured to extract data from an Azure SQL database to Azure Datalake blob storage.</center>
@@ -103,7 +104,7 @@ The SQL ingestion template works as follows:
 ### **Example 2**: Databricks Processing Pipeline
 
 <p align="center">
-  <img height="120" src="{{ site.url }}/assets/images/azure-data-engineering-principles/fig4.png">
+  <img height="120" src="https://github.com/craig-shenton/nhs-data-engineer/assets/images/azure-data-engineering-principles/fig4.png">
 </p>
 
 <center><b>Figure 4.</b> An example Azure Data Factory pipeline processing pipeline template that can be configured to run a Databricks notebook.</center>
@@ -123,7 +124,7 @@ We typically use this pipeline to trigger an orchestrator Databricks notebook wh
 ## Hierarchical Pipeline Orchestration
 
 <p align="center">
-  <img height=350px src="{{ site.url }}/assets/images/azure-data-engineering-principles/fig5.png">
+  <img height=350px src="https://github.com/craig-shenton/nhs-data-engineer/assets/images/azure-data-engineering-principles/fig5.png">
 </p>
 
 <center><b>Figure 5.</b> A hierarchicy of pipelines. At the top, a orchestration pipeline that triggers the sub-pipelines below. Each phase of the data processing (extract, transform, and load, or ETL) is a fully parameterised template that requires no setup of its own [<a href="https://github.com/mrpaulandrew/ContentCollateral">8</a>]. </center>
