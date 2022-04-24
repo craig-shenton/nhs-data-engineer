@@ -3,7 +3,7 @@ site: NHS Data Engineering
 title: NHS Data Engineering
 keywords: NHS, Data Engineering, Python, Blog
 description: >-
-  NHS Data Engineering Links
+  NHS Data Engineering Blog
 lang: en-US
 timezone:  UK
 repo: https://github.com/craig-shenton/nhs-data-engineer # site repo [optional]
