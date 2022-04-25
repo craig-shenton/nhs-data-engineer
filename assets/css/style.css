@@ -45,7 +45,7 @@ code,
 kbd,
 samp {
   font-family: monospace, sans-serif;
-  font-size: 1em
+  font-size: 0.8em
 }
 a > code {
   padding: 0;

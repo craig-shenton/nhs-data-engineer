@@ -38,7 +38,7 @@ For example, we created a generic dataset for handling `.csv` files on our Azure
 
 ![An Azure Data Factory dataset file path configuration.]({{site.repo}}/blob/main/assets/images/posts/azure-data-engineering-principles/fig1.png?raw=true){:class="img-responsive"}
 
-<center><b>Figure 1.</b> An Azure Data Factory dataset file path configuration using the parameters; `@dataset().fileSystem`, <code>@dataset().filePath</code>, <code>@dataset().fileName</code> to denote the datalake file system name, the file path and and the file name.</center>
+<center><b>Figure 1.</b> An Azure Data Factory dataset file path configuration using the parameters; <code>@dataset().fileSystem</code>, <code>@dataset().filePath</code>, <code>@dataset().fileName</code> to denote the datalake file system name, the file path and and the file name.</center>
 
 From these parameters, that specify the file path and name and the file system of the Azure Datalake linked service, we can use any `.csv` file available as the source for any pipeline activity. This has reduced the number of datasets listed in our ADF environment dramatically, reducing the overhead required to organise, search, and maintain our pipelines.
 
