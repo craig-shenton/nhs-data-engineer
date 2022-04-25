@@ -36,6 +36,8 @@ The first step in untangling this web of configurations is applying parameterisa
 
 For example, we created a generic dataset for handling `.csv` files on our Azure Datalake that passes the following parameters at runtime:
 
+![An Azure Data Factory dataset file path configuration]({{site.repo}}/blob/main/assets/images/posts/azure-data-engineering-principles/fig1.png?raw=true){:class="img-responsive"}
+
 <p align="center">
   <img height="110px" src="https://raw.githubusercontent.com/craig-shenton/nhs-data-engineer/main/assets/images/posts/azure-data-engineering-principles/fig1.png">
 </p>
