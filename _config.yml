@@ -15,7 +15,7 @@ repo: https://github.com/craig-shenton/nhs-data-engineer # site repo [optional]
 author:
   name: Craig Robert Shenton, PhD
   bio: Senior Data Engineer @ NHS England <br> Founder @ <a href="https://nhs-pycom.net/">NHS Python Community</a>
-  picture: https://raw.githubusercontent.com/craig-shenton/nhs-data-engineer/main/assets/images/iconfinder-icon.svg
+  picture: https://raw.githubusercontent.com/craig-shenton/nhs-data-engineer/main/assets/favicons/Rubics_Cube.svg
   github: craig-shenton # github username
   youtube: https://www.youtube.com/channel/UC_jacmsGNZQR5BPP7h0EtXw/featured # youtube username
   linkedin: craigrshenton # linkedin username
