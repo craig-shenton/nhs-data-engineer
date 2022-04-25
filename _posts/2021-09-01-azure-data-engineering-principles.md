@@ -41,7 +41,6 @@ For example, we created a generic dataset for handling `.csv` files on our Azure
 </p>
 
 <center><b>Figure 1.</b> An Azure Data Factory dataset file path configuration using the parameters; <code>@dataset().fileSystem</code>, <code>@dataset().filePath</code>, <code>@dataset().fileName</code> to denote the datalake file system name, the file path and and the file name.</center>
-<br>
 
 From these parameters, that specify the file path and name and the file system of the Azure Datalake linked service, we can use any `.csv` file available as the source for any pipeline activity. This has reduced the number of datasets listed in our ADF environment dramatically, reducing the overhead required to organise, search, and maintain our pipelines.
 
@@ -54,7 +53,6 @@ A downside of highly parameterised pipelines is that they can become harder to d
 </p>
 
 <center><b>Figure 2.</b> An example Azure Data Factory pipeline utility that can append the source path of any file with the latest time-stamped folder path.</center>
-<br>
 
 A practical example of the utility of parameterisation is the ability to append the source path of any file with a time-stamped folder, for example `@concat(variables('sourcePath'),variables('latestFolder'))`. This allows for a well organised record of data sampled at different time points to be stored within the Datalake.
 
@@ -88,7 +86,6 @@ For our internal analytics data engineering work, we have found it useful to bre
 </p>
 
 <center><b>Figure 3.</b> An example Azure Data Factory ingestion pipeline template that can be configured to extract data from an Azure SQL database to Azure Datalake blob storage.</center>
-<br>
 
 The pipeline shown above is a fully parameterised template developed to ingest raw data from an Azure SQL database to Azure Datalake blob storage. This is an example of a 'Source-Sink' pattern--used for parameterising and configuring data copy activities that move data from one location to another. As mentioned in the parameterisation section, each Azure Data Factory copy activity requires at least two datasets to configure both source and sink locations. However, here we have created a generic SQL dataset and a generic Azure Datalake dataset that can be dynamically configured across all pipelines. As such, this template can be used and re-used to move data from any Azure SQL server to any Azure blob storage container.
 
@@ -108,7 +105,6 @@ The SQL ingestion template works as follows:
 </p>
 
 <center><b>Figure 4.</b> An example Azure Data Factory pipeline processing pipeline template that can be configured to run a Databricks notebook.</center>
-<br>
 
 The parameterised pipeline template above has been developed to run a Databricks notebook from Azure Data Factory. This is an example of a 'Key-Value' pattern--useful for configuring the settings of activities outside of Azure Data Factory itself. Here the json configuration file is providing the key-value of a Databricks notebook file path. This could also be used to give the URL of an Azure logic app or pass multiple variables to an Azure function app for example.
 
@@ -128,7 +124,6 @@ We typically use this pipeline to trigger an orchestrator Databricks notebook wh
 </p>
 
 <center><b>Figure 5.</b> A hierarchicy of pipelines. At the top, a orchestration pipeline that triggers the sub-pipelines below. Each phase of the data processing (extract, transform, and load, or ETL) is a fully parameterised template that requires no setup of its own [<a href="https://github.com/mrpaulandrew/ContentCollateral">8</a>]. </center>
-<br>
 
 One of the most significant changes made to our data engineering setup is the use of hierarchical pipelines; that is the use of a single orchestration pipeline to trigger multiple ETL pipelines and utility sub-pipelines. This is based on Paul Andrews’ grandparent, parent, child design pattern that may be familiar to SSIS users [[9](https://mrpaulandrew.com/2019/09/25/azure-data-factory-pipeline-hierarchies-generation-control/)]. With this design, and the generic ETL templates outlined above, we can create a ‘plug-and-play’ data engineering system. We simply select the ingestion, transformation, and staging patterns required from the templates and link them together under the orchestration pipeline. A single json config file is then created with all the 'Sink-Source' and 'Key-Value' pairs needed to move the data through the ETL process, so no configuration is required in Azure Data Factory itself. This has significantly reduced the amount of time needed to set up new pipelines, and ensures best practices are maintained across all our products.
 

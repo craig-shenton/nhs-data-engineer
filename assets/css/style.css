@@ -188,3 +188,14 @@ pre{font-size: 14px; max-width: 90vw; overflow: auto;}
 .mode {float: right;position: relative;margin: auto;width: 42px;height: 22px;background: #F1F2F4;border-radius: 20px;cursor: pointer;}
 .mode:after {content: " ";position: absolute;top: 0;left: 4px;font-size: 14px;height: 22px;line-height: 23px;text-align: center;transition: all 0.3s ease;}
 .mode span {position: absolute;z-index: 1;margin: 2px;display: block;width: 18px;height: 18px;background: white;border-radius: 50%;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);transform: translateX(20px);transition: all 0.4s ease;}
+
+
+
+
+
+
+
+
+
+
+
