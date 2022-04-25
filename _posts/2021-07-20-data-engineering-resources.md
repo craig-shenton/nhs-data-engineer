@@ -29,6 +29,7 @@ tags: [Data Engineering]
 [Principled Data Engineering, Part I: Architectural Overview](https://medium.com/ssense-tech/principled-data-engineering-part-i-architectural-overview-6d4bdf89b657). The first of a two part series exploring the fundamental themes of architecting and governing a data lake
 
 ## Great Expectations
+Great Expectations helps data teams eliminate pipeline debt, through data testing, documentation, and profiling.
 
 [Great Expectations](https://greatexpectations.io/)
 
