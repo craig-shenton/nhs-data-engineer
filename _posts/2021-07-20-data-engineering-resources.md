@@ -8,23 +8,23 @@ categories: Data Engineering
 tags: [Data Engineering]
 ---
 
-## Data Engineering Resources
+## Getting Started
 
 [How To Become a Data Engineer](https://github.com/adilkhash/Data-Engineering-HowTo)
+
+[A Beginner’s Guide to Data Engineering — Part I](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)
+
+[1 year of must-read data engineering articles](https://www.reddit.com/r/dataengineering/comments/p3kpq9/1_year_of_mustread_articles/)
+
+[https://www.dataengineeringweekly.com/](https://www.dataengineeringweekly.com/)
+
+## Engineering Management
 
 [Production Oriented Development](https://paulosman.me/2019/12/30/production-oriented-development/)
 
 [Awesome Engineering Management](https://github.com/ixaxaar/awesome-engineering-management). Pointers and tools for learning and day-to-day practice of engineering management & leadership. 
 
-[1 year of must-read data engineering articles](https://www.reddit.com/r/dataengineering/comments/p3kpq9/1_year_of_mustread_articles/)
-
 [11 Ways to Improve Software Testing through Planning, Work Environment, Automated Testing, and Reporting](https://www.altexsoft.com/blog/engineering/software-testing-qa-best-practices/)
-
-[https://www.dataengineeringweekly.com/](https://www.dataengineeringweekly.com/)
-
-[How To Become a Data Engineer](https://github.com/adilkhash/Data-Engineering-HowTo)
-
-[A Beginner’s Guide to Data Engineering — Part I](https://medium.com/@rchang/a-beginners-guide-to-data-engineering-part-i-4227c5c457d7)
 
 [Principled Data Engineering, Part I: Architectural Overview](https://medium.com/ssense-tech/principled-data-engineering-part-i-architectural-overview-6d4bdf89b657). The first of a two part series exploring the fundamental themes of architecting and governing a data lake
 
