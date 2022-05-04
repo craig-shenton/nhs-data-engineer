@@ -1,6 +1,6 @@
 ---
 title: "Azure Data Engineering Templates"
-date: 2021-09-01T00:00:00+00:00
+date: 2021-09-09T00:00:00+00:00
 author: Craig Robert Shenton, Mattia Ficarelli
 layout: post
 permalink: /azure-data-engineering-templates/
@@ -120,7 +120,7 @@ VERSION:        0.0.1
 
 ![Data ingestion using a databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion using a databricks notebook*
+*Figure 2: Data ingestion using a databricks notebook*
 
 Pipeline to ingest raw data to Azure Datalake blob storage using a
 databricks notebook.
@@ -185,9 +185,9 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion of an excel file sheet]({{site.repo}}/blob/main/assets/images/pipeline_temps/excel_sheet_ingestion.png?raw=true){width="600px"}
+![Data ingestion of an excel file sheet]({{site.repo}}/blob/main/assets/images/pipeline_temps/excel_sheet_ingestion.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion of an excel file sheet*
+*Figure 3: Data ingestion of an excel file sheet*
 
 Pipeline to ingest a specified excel file sheet, as a `.csv` file, to
 Azure Datalake blob storage.
@@ -256,11 +256,11 @@ VERSION:        0.0.1
 
 ![Data ingestion of multiple excel file sheets]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion of multiple excel file sheets*
+*Figure 4: Data ingestion of multiple excel file sheets*
 
 ![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_2.png?raw=true){:class="img-responsive"}
 
-*Figure 2: ForEach loop activities within pipeline*
+*Figure 5: ForEach loop activities within pipeline*
 
 Pipeline to ingest multiple specified excel file sheets as `.csv` files
 to Azure Datalake blob storage.
@@ -269,7 +269,7 @@ to Azure Datalake blob storage.
 > 2.  Set the Azure Datalake file system.
 > 3.  Set the source path to the folder containing the excel files.
 > 4.  Set the sink path.
-> 5.  Set an [array]{.title-ref} variable containing the list of excel
+> 5.  Set an `array` variable containing the list of excel
 >     file metadata.
 > 6.  ForEach loops over each excel file:
 >     a.  Sets the source sheet and sink file.
@@ -281,11 +281,11 @@ to Azure Datalake blob storage.
 #### Note
 
 Copy activity has 'File path type' set to wildcard and the file name
-regex as `*.xlsx` (excel) (see Figure 3).
+regex as `*.xlsx` (excel) (see Figure 6).
 
 ![Copy activity wildcard setup]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_3.png?raw=true){:class="img-responsive"}
 
-*Figure 3: Copy activity wildcard setup*
+*Figure 6: Copy activity wildcard setup*
 
 ### Pipeline Configuration
 
@@ -352,7 +352,7 @@ VERSION:        0.0.1
 
 ![Data ingestion from a web URL]({{site.repo}}/blob/main/assets/images/pipeline_temps/web_url_ingestion.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion from a web URL*
+*Figure 7: Data ingestion from a web URL*
 
 Pipeline to ingest data from a web URL as a `.csv` file to Azure
 Datalake blob storage.
@@ -419,7 +419,7 @@ VERSION:        0.0.1
 
 ![Data ingestion using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_ingestion.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion using an azure function app*
+*Figure 8: Data ingestion using an azure function app*
 
 Pipeline to ingest raw data to Azure Datalake blob storage using an
 Azure function app.
@@ -484,7 +484,7 @@ VERSION:        0.0.1
 
 ![Data ingestion from microsoft sharepoint]({{site.repo}}/blob/main/assets/images/pipeline_temps/sharepoint_ingestion.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data ingestion from microsoft sharepoint*
+*Figure 9: Data ingestion from microsoft sharepoint*
 
 Pipeline to ingest a specified folder from Microsoft SharePoint to Azure
 Datalake blob storage.
@@ -547,7 +547,7 @@ VERSION:        0.0.1
 
 ![Data processing using a Databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data processing using a Databricks notebook*
+*Figure 10: Data processing using a Databricks notebook*
 
 Pipeline to process data from a folder in Azure Datalake blob storage
 using a databricks notebook
@@ -649,7 +649,7 @@ VERSION:        0.0.1
 
 ![Data processing using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_processing.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data processing using an azure function app*
+*Figure 11: Data processing using an azure function app*
 
 #### Note
 
@@ -729,11 +729,11 @@ VERSION:        0.0.1
 
 ![Data processing using multiple azure function apps]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data processing using multiple azure function apps*
+*Figure 12: Data processing using multiple azure function apps*
 
 ![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing_2.png?raw=true){:class="img-responsive"}
 
-*Figure 2: ForEach loop activities within pipeline*
+*Figure 13: ForEach loop activities within pipeline*
 
 #### Note
 
@@ -822,7 +822,7 @@ VERSION:        0.0.1
 
 ![Copying a .csv file between Azure Datalake directories]({{site.repo}}/blob/main/assets/images/pipeline_temps/csv_file_processing.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Copying a \`\`.csv\`\` file between Azure Datalake
+*Figure 14: Copying a `.csv` file between Azure Datalake
 directories*
 
 Pipeline to copy a `.csv` file in a time-stamped folder between
@@ -896,7 +896,7 @@ VERSION:        0.0.1
 
 ![Data staging to a table in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql_database_staging.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data staging to a table in an Azure SQL database*
+*Figure 15: Data staging to a table in an Azure SQL database*
 
 Pipeline to stage data (`.csv` file) from a time-stamped folder in Azure
 Datalake blob storage to a table in an Azure SQL database.
@@ -975,11 +975,11 @@ VERSION:        0.0.1
 
 ![Data staging to multiple tables in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging.png?raw=true){:class="img-responsive"}
 
-*Figure 1: Data staging to multiple tables in an Azure SQL database*
+*Figure 16: Data staging to multiple tables in an Azure SQL database*
 
 ![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging_2.png?raw=true){:class="img-responsive"}
 
-*Figure 2: ForEach loop activities within pipeline*
+*Figure 17: ForEach loop activities within pipeline*
 
 Pipeline to stage data (`.csv` files) from a time-stamped folders in
 Azure Datalake blob storage to multiple tables in an Azure SQL database.
