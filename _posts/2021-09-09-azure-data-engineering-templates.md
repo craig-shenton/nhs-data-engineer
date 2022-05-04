@@ -23,7 +23,7 @@ SQL Database Ingestion Pipeline
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -41,11 +41,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        20 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data ingestion from a SQL database](_static/img/pipeline_temps/sql-ingest.png){width="600px"}
+![Data ingestion from a SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql-ingest.png){:class="img-responsive"}
 
 *Figure 1: Data ingestion from a SQL database*
 
@@ -68,7 +68,7 @@ database.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_sql",
@@ -82,7 +82,7 @@ database.
       "sink_file": "table_1.parquet"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
@@ -119,7 +119,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion using a databricks notebook](_static/img/pipeline_temps/databricks/databricks.png){width="600px"}
+![Data ingestion using a databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png){width="600px"}
 
 *Figure 1: Data ingestion using a databricks notebook*
 
@@ -187,7 +187,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion of an excel file sheet](_static/img/pipeline_temps/excel_sheet_ingestion.png){width="600px"}
+![Data ingestion of an excel file sheet]({{site.repo}}/blob/main/assets/images/pipeline_temps/excel_sheet_ingestion.png){width="600px"}
 
 *Figure 1: Data ingestion of an excel file sheet*
 
@@ -264,11 +264,11 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion of multiple excel file sheets](_static/img/pipeline_temps/multiple_excel_sheet_ingestion.png){width="600px"}
+![Data ingestion of multiple excel file sheets]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion.png){width="600px"}
 
 *Figure 1: Data ingestion of multiple excel file sheets*
 
-![ForEach loop activities within pipeline](_static/img/pipeline_temps/multiple_excel_sheet_ingestion_2.png){width="600px"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_2.png){width="600px"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
@@ -297,7 +297,7 @@ Copy activity has 'File path type' set to wildcard and the file name
 regex as `*.xlsx` (excel) (see Figure 3).
 :::
 
-![Copy activity wildcard setup](_static/img/pipeline_temps/multiple_excel_sheet_ingestion_3.png){width="600px"}
+![Copy activity wildcard setup]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_3.png){width="600px"}
 
 *Figure 3: Copy activity wildcard setup*
 
