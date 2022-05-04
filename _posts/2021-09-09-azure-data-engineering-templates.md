@@ -89,15 +89,14 @@ database.
 Download the Azure Data Factory json configuration file to use this
 template in your own data pipelines.
 
-`sql-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/sql-ingestion.json>`{.interpreted-text
-role="download"}
+[sql-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/sql-ingestion.json)
 
 Databricks Ingestion Pipeline
 -----------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -115,7 +114,7 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        20 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
@@ -140,7 +139,7 @@ file.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_databricks",
@@ -150,22 +149,21 @@ file.
       "databricks_notebook": "/path/to/databricks/notebook"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`databricks-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/databricks-ingestion.json>`{.interpreted-text
-role="download"}
+[databricks-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/databricks-ingestion.json)
 
 Excel Sheet Ingestion Pipeline
 ------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -183,7 +181,7 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        20 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
@@ -204,7 +202,7 @@ Azure Datalake blob storage.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_excel_sheet",
@@ -218,31 +216,23 @@ Azure Datalake blob storage.
       "sink_name": "table_1.csv"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
-Download the Azure Data Factory `.json` configuration file to use this
-template in your own data pipelines.
-`excel-sheet-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/excel-sheet-ingestion.json>`{.interpreted-text
-role="download"}
+Download the Azure Data Factory `.json` configuration file to use this template in your own data pipelines.
+[excel-sheet-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/excel-sheet-ingestion.json)
 
-::: {.note}
-::: {.title}
-Note
-:::
+#### Note
 
-Alternatively this a variation of this pipeline can be used to ingest
-multiple excel file sheets to a set of [.csv]{.title-ref} files in Azure
-Datalake blob storage.
-:::
+> Alternatively this a variation of this pipeline can be used to ingest multiple excel file sheets to a set of [.csv]{.title-ref} files in Azure Datalake blob storage.
 
 Multiple Excel Sheet Ingestion Pipeline
 ---------------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -260,7 +250,7 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        20 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
@@ -288,14 +278,10 @@ to Azure Datalake blob storage.
 >     c.  If the copy activity fails, the error notification logic app
 >         API will notify the specified email address of the error.
 
-::: {.note}
-::: {.title}
-Note
-:::
+#### Note
 
 Copy activity has 'File path type' set to wildcard and the file name
 regex as `*.xlsx` (excel) (see Figure 3).
-:::
 
 ![Copy activity wildcard setup]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_3.png){width="600px"}
 
@@ -303,7 +289,7 @@ regex as `*.xlsx` (excel) (see Figure 3).
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_multiple_excel_sheets",
@@ -328,24 +314,21 @@ regex as `*.xlsx` (excel) (see Figure 3).
     }
   ]
 }
-```
-
-}
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`multiple-excel-sheet-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-excel-sheet-ingestion.json>`{.interpreted-text
-role="download"}
+[multiple-excel-sheet-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-excel-sheet-ingestion.json)
 
 Web URL Data Ingestion Pipeline
 -------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -363,11 +346,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        20 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data ingestion from a web URL](_static/img/pipeline_temps/web_url_ingestion.png){width="600px"}
+![Data ingestion from a web URL]({{site.repo}}/blob/main/assets/images/pipeline_temps/web_url_ingestion.png){width="600px"}
 
 *Figure 1: Data ingestion from a web URL*
 
@@ -386,7 +369,7 @@ Datalake blob storage.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_web_url",
@@ -398,22 +381,21 @@ Datalake blob storage.
       "sink_file": "table_1.csv"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`web-url-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/web-url-ingestion.json>`{.interpreted-text
-role="download"}
+[web-url-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/web-url-ingestion.json)
 
 Azure Function App Ingestion Pipeline
 -------------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -431,11 +413,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data ingestion using an azure function app](_static/img/pipeline_temps/function_app_ingestion.png){width="600px"}
+![Data ingestion using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_ingestion.png){width="600px"}
 
 *Figure 1: Data ingestion using an azure function app*
 
@@ -454,7 +436,7 @@ either a `.csv` file or a `.parquet` file.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "ingestion_function_app",
@@ -464,22 +446,21 @@ either a `.csv` file or a `.parquet` file.
       "func_name": "azure_func_app"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`function-app-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/function-app-ingestion.json>`{.interpreted-text
-role="download"}
+[function-app-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/function-app-ingestion.json)
 
 SharePoint Ingestion Pipeline
 -----------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -497,11 +478,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data ingestion from microsoft sharepoint](_static/img/pipeline_temps/sharepoint_ingestion.png){width="600px"}
+![Data ingestion from microsoft sharepoint]({{site.repo}}/blob/main/assets/images/pipeline_temps/sharepoint_ingestion.png){width="600px"}
 
 *Figure 1: Data ingestion from microsoft sharepoint*
 
@@ -517,7 +498,7 @@ Datalake blob storage.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight python %}
 {
   "pipeline": {
     "name": "ingestion_sharepoint",
@@ -528,22 +509,21 @@ Datalake blob storage.
       "logic_app_url": "https://...logic.azure.com/..."
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`sharepoint-ingestion.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/sharepoint-ingestion.json>`{.interpreted-text
-role="download"}
+[sharepoint-ingestion.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/sharepoint-ingestion.json)
 
 Databricks Processing Pipeline
 ------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -561,11 +541,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        23 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data processing using a Databricks notebook](_static/img/pipeline_temps/databricks/databricks.png){width="600px"}
+![Data processing using a Databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png){width="600px"}
 
 *Figure 1: Data processing using a Databricks notebook*
 
@@ -582,7 +562,7 @@ using a databricks notebook
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "processing_databricks",
@@ -591,21 +571,15 @@ using a databricks notebook
       "databricks_notebook": "/path/to/databricks/notebook"
     }
 }
-```
+{% endhighlight %}
 
 ### Databricks Orchestration
 
-::: {.note}
-::: {.title}
-Note
-:::
+#### Note
 
-Alternatively this pipeline can be used to trigger an orchestrator
-databricks notebook which in turn runs a series of data processing
-notebooks.
-:::
+Alternatively this pipeline can be used to trigger an orchestrator databricks notebook which in turn runs a series of data processing notebooks.
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "processing_databricks",
@@ -625,34 +599,33 @@ notebooks.
         },
     }
 }
-```
+{% endhighlight %}
 
 Python code to sequentially run databricks notebook paths specified in a
 `.json` config file from a databricks orchestrator notebook.
 
-``` {.python}
+{% highlight python %}
 #Squentially run datbricks notebooks
 for index, item in enumerate(config_JSON['pipeline']['project']['databricks']): 
     notebook = config_JSON['pipeline']['project']['databricks'][index]['databricks_notebook']
     dbutils.notebook.run(notebook, 120)
   except Exception as e:
     print(e)
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`processing-databricks.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/databricks-processing.json>`{.interpreted-text
-role="download"}
+[processing-databricks.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/databricks-processing.json)
 
 Azure Function App Processing Pipeline
 --------------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -670,22 +643,18 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data processing using an azure function app](_static/img/pipeline_temps/function_app_processing.png){width="600px"}
+![Data processing using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_processing.png){width="600px"}
 
 *Figure 1: Data processing using an azure function app*
 
-::: {.note}
-::: {.title}
-Note
-:::
+#### Note
 
 This pipeline is designed to allow for raw data to be ingested and then
 appended onto an existing table with historical data.
-:::
 
 Pipeline to process data to time-stamped folder in Azure Datalake blob
 storage using an Azure function app.
@@ -711,7 +680,7 @@ either a `.csv` file or a `.parquet` file.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "processing_function_app",
@@ -722,7 +691,7 @@ either a `.csv` file or a `.parquet` file.
       "source_path": "raw/historical/data/source"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
@@ -737,7 +706,7 @@ Multiple Azure Function Apps Processing Pipeline
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -755,27 +724,23 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data processing using multiple azure function apps](_static/img/pipeline_temps/multiple_function_app_processing.png){width="600px"}
+![Data processing using multiple azure function apps]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing.png){width="600px"}
 
 *Figure 1: Data processing using multiple azure function apps*
 
-![ForEach loop activities within pipeline](_static/img/pipeline_temps/multiple_function_app_processing_2.png){width="600px"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing_2.png){width="600px"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
-::: {.note}
-::: {.title}
-Note
-:::
+#### Note
 
 This pipeline allows for multiple different processed data files to be
 generated from the same data source during a pipeline run by using
 multiple function apps running sequentially.
-:::
 
 Pipeline to process data to time-stamped folder in Azure Datalake blob
 storage using multiple Azure function apps.
@@ -805,7 +770,7 @@ either a `.csv` file or a `.parquet` file.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "processing_function_app",
@@ -820,22 +785,21 @@ either a `.csv` file or a `.parquet` file.
       "source_path": "raw/historical/data/source"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`multiple-function-app-processing.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-function-app-processing.json>`{.interpreted-text
-role="download"}
+[multiple-function-app-processing.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-function-app-processing.json)
 
 Copy File Processing Pipeline
 -----------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -853,11 +817,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Copying a .csv file between Azure Datalake directories](_static/img/pipeline_temps/csv_file_processing.png){width="600px"}
+![Copying a .csv file between Azure Datalake directories]({{site.repo}}/blob/main/assets/images/pipeline_temps/csv_file_processing.png){width="600px"}
 
 *Figure 1: Copying a \`\`.csv\`\` file between Azure Datalake
 directories*
@@ -882,7 +846,7 @@ directories in Azure Datalake blob storage.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "processing_csv_file",
@@ -895,22 +859,21 @@ directories in Azure Datalake blob storage.
       "sink_name": "file_copy.csv"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`csv-file-processing.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/csv-file-processing.json>`{.interpreted-text
-role="download"}
+[csv-file-processing.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/csv-file-processing.json)
 
 SQL Table Staging Pipeline
 --------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -928,11 +891,11 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data staging to a table in an Azure SQL database](_static/img/pipeline_temps/sql_database_staging.png){width="600px"}
+![Data staging to a table in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql_database_staging.png){width="600px"}
 
 *Figure 1: Data staging to a table in an Azure SQL database*
 
@@ -962,7 +925,7 @@ Datalake blob storage to a table in an Azure SQL database.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "staging_sql_database",
@@ -975,22 +938,21 @@ Datalake blob storage to a table in an Azure SQL database.
         "sink_table":"sql_table_1"
     }
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`sql-database-staging.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/staging-sql-database.json>`{.interpreted-text
-role="download"}
+[sql-database-staging.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/staging-sql-database.json)
 
 Multiple SQL Table Staging Pipeline
 -----------------------------------
 
 ### Metadata
 
-``` {.python}
+{% highlight python %}
 # -------------------------------------------------------------------------
 # Copyright (c) 2021 NHS England and NHS Improvement. All rights reserved.
 # Licensed under the MIT License. See license.txt in the project root for
@@ -1008,15 +970,15 @@ CONTACT:        data@nhsx.nhs.uk
 CREATED:        29 Sept 2021
 VERSION:        0.0.1
 """
-```
+{% endhighlight %}
 
 ### Description
 
-![Data staging to multiple tables in an Azure SQL database](_static/img/pipeline_temps/multiple_table_sql_database_staging.png){width="600px"}
+![Data staging to multiple tables in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging.png){width="600px"}
 
 *Figure 1: Data staging to multiple tables in an Azure SQL database*
 
-![ForEach loop activities within pipeline](_static/img/pipeline_temps/multiple_table_sql_database_staging_2.png){width="600px"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging_2.png){width="600px"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
@@ -1047,7 +1009,7 @@ Azure Datalake blob storage to multiple tables in an Azure SQL database.
 
 ### Pipeline Configuration
 
-``` {.python}
+{% highlight json %}
 {
   "pipeline": {
     "name": "multiple_tables_staging_sql_database",
@@ -1074,15 +1036,14 @@ Azure Datalake blob storage to multiple tables in an Azure SQL database.
           }
       ]
 }
-```
+{% endhighlight %}
 
 ### Data Factory Configuration
 
 Download the Azure Data Factory `.json` configuration file to use this
 template in your own data pipelines.
 
-`multiple-tables-sql-database-staging.json <https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-tables-sql-database-staging.json>`{.interpreted-text
-role="download"}
+[multiple-tables-sql-database-staging.json](https://raw.githubusercontent.com/nhsx/au-data-engineering/main/config-files/adf-templates/multiple-tables-sql-database-staging.json)
 
 
 
