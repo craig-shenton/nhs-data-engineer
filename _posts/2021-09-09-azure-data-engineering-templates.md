@@ -45,7 +45,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion from a SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql-ingest.png){:class="img-responsive"}
+![Data ingestion from a SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql-ingest.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion from a SQL database*
 
@@ -118,7 +118,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion using a databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png){:class="img-responsive"}
+![Data ingestion using a databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion using a databricks notebook*
 
@@ -185,7 +185,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion of an excel file sheet]({{site.repo}}/blob/main/assets/images/pipeline_temps/excel_sheet_ingestion.png){width="600px"}
+![Data ingestion of an excel file sheet]({{site.repo}}/blob/main/assets/images/pipeline_temps/excel_sheet_ingestion.png?raw=true){width="600px"}
 
 *Figure 1: Data ingestion of an excel file sheet*
 
@@ -254,11 +254,11 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion of multiple excel file sheets]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion.png){:class="img-responsive"}
+![Data ingestion of multiple excel file sheets]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion of multiple excel file sheets*
 
-![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_2.png){:class="img-responsive"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_2.png?raw=true){:class="img-responsive"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
@@ -283,7 +283,7 @@ to Azure Datalake blob storage.
 Copy activity has 'File path type' set to wildcard and the file name
 regex as `*.xlsx` (excel) (see Figure 3).
 
-![Copy activity wildcard setup]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_3.png){:class="img-responsive"}
+![Copy activity wildcard setup]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_excel_sheet_ingestion_3.png?raw=true){:class="img-responsive"}
 
 *Figure 3: Copy activity wildcard setup*
 
@@ -350,7 +350,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion from a web URL]({{site.repo}}/blob/main/assets/images/pipeline_temps/web_url_ingestion.png){:class="img-responsive"}
+![Data ingestion from a web URL]({{site.repo}}/blob/main/assets/images/pipeline_temps/web_url_ingestion.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion from a web URL*
 
@@ -417,7 +417,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_ingestion.png){:class="img-responsive"}
+![Data ingestion using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_ingestion.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion using an azure function app*
 
@@ -482,7 +482,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data ingestion from microsoft sharepoint]({{site.repo}}/blob/main/assets/images/pipeline_temps/sharepoint_ingestion.png){:class="img-responsive"}
+![Data ingestion from microsoft sharepoint]({{site.repo}}/blob/main/assets/images/pipeline_temps/sharepoint_ingestion.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data ingestion from microsoft sharepoint*
 
@@ -545,7 +545,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data processing using a Databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png){:class="img-responsive"}
+![Data processing using a Databricks notebook]({{site.repo}}/blob/main/assets/images/pipeline_temps/databricks/databricks.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data processing using a Databricks notebook*
 
@@ -647,7 +647,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data processing using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_processing.png){:class="img-responsive"}
+![Data processing using an azure function app]({{site.repo}}/blob/main/assets/images/pipeline_temps/function_app_processing.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data processing using an azure function app*
 
@@ -727,11 +727,11 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data processing using multiple azure function apps]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing.png){:class="img-responsive"}
+![Data processing using multiple azure function apps]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data processing using multiple azure function apps*
 
-![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing_2.png){:class="img-responsive"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_function_app_processing_2.png?raw=true){:class="img-responsive"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
@@ -820,7 +820,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Copying a .csv file between Azure Datalake directories]({{site.repo}}/blob/main/assets/images/pipeline_temps/csv_file_processing.png){:class="img-responsive"}
+![Copying a .csv file between Azure Datalake directories]({{site.repo}}/blob/main/assets/images/pipeline_temps/csv_file_processing.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Copying a \`\`.csv\`\` file between Azure Datalake
 directories*
@@ -894,7 +894,7 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data staging to a table in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql_database_staging.png){:class="img-responsive"}
+![Data staging to a table in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/sql_database_staging.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data staging to a table in an Azure SQL database*
 
@@ -973,11 +973,11 @@ VERSION:        0.0.1
 
 ### Description
 
-![Data staging to multiple tables in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging.png){:class="img-responsive"}
+![Data staging to multiple tables in an Azure SQL database]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging.png?raw=true){:class="img-responsive"}
 
 *Figure 1: Data staging to multiple tables in an Azure SQL database*
 
-![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging_2.png){:class="img-responsive"}
+![ForEach loop activities within pipeline]({{site.repo}}/blob/main/assets/images/pipeline_temps/multiple_table_sql_database_staging_2.png?raw=true){:class="img-responsive"}
 
 *Figure 2: ForEach loop activities within pipeline*
 
