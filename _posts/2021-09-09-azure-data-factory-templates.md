@@ -3,7 +3,7 @@ title: "Azure Data Engineering Templates"
 date: 2021-09-09T00:00:00+00:00
 author: Craig Robert Shenton, Mattia Ficarelli
 layout: post
-permalink: /azure-data-engineering-templates/
+permalink: /azure-data-factory-templates/
 categories: Data Engineering
 tags: [Azure, Data Engineering, Data Factory]
 ---
@@ -18,19 +18,19 @@ Originally posted on the [NHSX technical gateway](https://nhsx.github.io/Analyti
 
 Open access and reusable design documentation of pipelines used in the NHSX Analytics Azure Data Factory (ADF) environment.
 
-- [SQL Database Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#sql-database-ingestion-pipeline)
-- [Databricks Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#databricks-ingestion-pipeline)
-- [Excel Sheet Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#excel-sheet-ingestion-pipeline)
-- [Multiple Excel Sheet Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#multiple-excel-sheet-ingestion-pipeline)
-- [Web URL Data Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#web-url-data-ingestion-pipeline)
-- [Azure Function App Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#azure-function-app-ingestion-pipeline)
-- [SharePoint Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#sharepoint-ingestion-pipeline)
-- [Databricks Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#databricks-processing-pipeline)
-- [Azure Function App Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#azure-function-app-processing-pipeline)
-- [Multiple Azure Function Apps Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#multiple-azure-fction-apps-processing-pipeline)
-- [Copy File Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#copy-file-processing-pipeline)
-- [SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#sql-table-staging-pipeline)
-- [Multiple SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-engineering-templates/#multiple-sql-table-staging-pipeline)
+- [SQL Database Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#sql-database-ingestion-pipeline)
+- [Databricks Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#databricks-ingestion-pipeline)
+- [Excel Sheet Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#excel-sheet-ingestion-pipeline)
+- [Multiple Excel Sheet Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-excel-sheet-ingestion-pipeline)
+- [Web URL Data Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#web-url-data-ingestion-pipeline)
+- [Azure Function App Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#azure-function-app-ingestion-pipeline)
+- [SharePoint Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#sharepoint-ingestion-pipeline)
+- [Databricks Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#databricks-processing-pipeline)
+- [Azure Function App Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#azure-function-app-processing-pipeline)
+- [Multiple Azure Function Apps Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-azure-fction-apps-processing-pipeline)
+- [Copy File Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#copy-file-processing-pipeline)
+- [SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#sql-table-staging-pipeline)
+- [Multiple SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-sql-table-staging-pipeline)
 
 SQL Database Ingestion Pipeline
 -------------------------------
