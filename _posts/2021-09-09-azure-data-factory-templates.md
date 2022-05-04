@@ -27,7 +27,7 @@ Open access and reusable design documentation of pipelines used in the NHSX Anal
 - [SharePoint Ingestion Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#sharepoint-ingestion-pipeline)
 - [Databricks Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#databricks-processing-pipeline)
 - [Azure Function App Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#azure-function-app-processing-pipeline)
-- [Multiple Azure Function Apps Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-azure-fction-apps-processing-pipeline)
+- [Multiple Azure Function Apps Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-azure-function-apps-processing-pipeline)
 - [Copy File Processing Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#copy-file-processing-pipeline)
 - [SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#sql-table-staging-pipeline)
 - [Multiple SQL Table Staging Pipeline](https://craig-shenton.github.io/nhs-data-engineer/azure-data-factory-templates/#multiple-sql-table-staging-pipeline)
