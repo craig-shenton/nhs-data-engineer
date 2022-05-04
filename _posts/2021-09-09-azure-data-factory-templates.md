@@ -1,5 +1,5 @@
 ---
-title: "Azure Data Engineering Templates"
+title: "Azure Data Factory Templates"
 date: 2021-09-09T00:00:00+00:00
 author: Craig Robert Shenton, Mattia Ficarelli
 layout: post
